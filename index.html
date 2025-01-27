@@ -1164,6 +1164,18 @@
                 } else {
                     clearInterval(timer)
                     content.innerHTML = '<p>' + str_ + '</p>'
+					// 加载并显示图片3
+					let img3 = document.createElement('img');
+					img3.src = './img/1.jpg';
+					img3.alt = '照片3';
+					img3.style.marginTop = '30px';
+					img3.style.width = '240px';
+					img3.style.height = '180px';
+					
+					img3.style.display = 'block'; // 确保图片换行显示
+					content.appendChild(img3);  // 在文字后面添加图片
+
+	
                 }
             }, 100)
         }
